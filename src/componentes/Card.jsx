@@ -1,6 +1,6 @@
 // Card.jsx
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './Card.css'; 
 
 function Card({ name, password }) {
@@ -14,6 +14,10 @@ function Card({ name, password }) {
 }
 
 
+// verificar las props recibidas
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
+};
 
 export default Card;
- 
