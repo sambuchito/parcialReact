@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = () => {
   return (
-    <div>Hola, soy una tarjeta!</div>
+    <div>ola k asé</div>
   )
 }
 
