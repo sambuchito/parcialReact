@@ -1,22 +1,16 @@
-/* eslint-disable no-irregular-whitespace */
-import './App.css'
-import Card from "./componentes/Card";
+// App.jsx
+import React from 'react';
+import Form from './componentes/Form';
+import './App.css';
 
 function App() {
-   return (
-        <div className="App">
-      <h1>Carga de Estudiantes</h1>
-      <form>
-        
-      </form>
-          <Card />
-        </div>
-
-
-      );
-  
-    
+  return (
+    <div className="App">
+      <h1>Bienvenido internauta!</h1>
+      <h2>Favor de completar el siguiente formulario</h2>
+      <Form />
+    </div>
+  );
 }
 
-export default App
-
+export default App;

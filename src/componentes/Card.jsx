@@ -1,9 +1,19 @@
-import React from 'react'
+// Card.jsx
+import React from 'react';
 
-const Card = () => {
+import './Card.css'; 
+
+function Card({ name, password }) {
   return (
-    <div>ola k asé</div>
-  )
+    <div className="card">
+      <h3>Información ingresada</h3>
+      <p><strong>Nombre:</strong> {name}</p>
+      <p><strong>Contraseña:</strong> {password}</p>
+    </div>
+  );
 }
 
-export default Card
+
+
+export default Card;
+ 
