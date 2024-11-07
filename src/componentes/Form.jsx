@@ -26,12 +26,14 @@ function Form() {
     // validacion de primer input
     if (name.length < 3 || name.startsWith(' ')) {
         setError('Por favor chequea que la información sea correcta');
+        setIsSubmitted(false);
         return;
       }
   
       // validacion de segundo input
       if (password.length < 6) {
         setError('Por favor chequea que la información sea correcta');
+        setIsSubmitted(false);
         return;
       }
   
@@ -47,7 +49,7 @@ function Form() {
             <input
               type="text"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)} placeholder="Ingrese su nombre"
             />
           </div>
           <div>
@@ -55,7 +57,7 @@ function Form() {
             <input
               type="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)} placeholder="Ingrese su contraseña"
             />
           </div>
           <button type="submit">Enviar</button>

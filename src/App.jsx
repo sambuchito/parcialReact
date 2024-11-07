@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Bienvenido internauta!</h1>
+      <h1>Bienvenido chili pepper!</h1>
       <h2>Favor de completar el siguiente formulario</h2>
       <Form />
     </div>
